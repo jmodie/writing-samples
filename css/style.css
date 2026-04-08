@@ -1,21 +1,20 @@
 :root {
-  --primary-color: #3e3783;
-  --secondary-color: #796a9f;
-  --text-color: #333;
-  --bg-color: #f4f4f4;
-  --white: #ffffff;
-}
+  /* Step 1: Tell the browser both light and dark themes are supported */
+  color-scheme: light dark;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica', sans-serif;
-  scroll-behavior: smooth; /* Smooth scrolling for nav links */
+  /* Step 2: Define variables with light-dark(light-value, dark-value) */
+  --bg-color: light-dark(#ffffff, #121212);
+  --text-color: light-dark(#333333, #efefef);
+  --accent: light-dark(#0066cc, #4da3ff);
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.6;
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s ease; /* Optional smooth transition */
+}
+
+a {
+  color: var(--accent);
 }
