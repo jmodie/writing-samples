@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #3e3783;
+  --secondary-color: #796a9f;
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling for nav links */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
